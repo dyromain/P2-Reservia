@@ -1,3 +1,5 @@
+/* Définition de la police */
+
 @font-face {
     font-family: 'ralewaythin';
     src: url('raleway-variablefont_wght-webfont.eot');
@@ -11,30 +13,408 @@
 
 }
 
-body
-{
-    font-family: 'ralewaythin', Arial, sans-serif;
-}
+/* Eléments principaux de la page */
 
-.placeholder
+body
 {
     font-family: 'ralewaythin', Arial, sans-serif;
 }
 
 #bloc_page
 {
-    width: 900px;
-    
+    width: 1400px;
+    margin: auto;
 }
+
+h1
+{
+    font-size: 1.5em;
+}
+
+footer h1,  #filtres h1
+{
+    font-size: 1em;
+}
+
+/* Header */
 
 header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
+}
+
+#logo
+{
+    display: flex;
+}
+
+#logo img
+  {
+    width: 100px;
+    height: 50px;
+  }
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav a
+{
+    font-size: 1.2em;
+    color:#0065FC;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+nav a:hover
+{
+    color:#000000;
+}
+
+#intro p
+{
+    margin-left: -5px;
+}
+
+/*Barre de recherche*/
+
+#recherche
+{
+    display: flex;
+    flex-wrap: nowrap;
+     
+}
+
+.fa-map-marker-alt
+{
+    background-color:#F2F2F2 ;
+    padding: 1%;
+    border-radius: 10px 0 0 10px;
+
+}
+
+#barre-recherche
+{
+    font-family: 'ralewaythin', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-color: #F2F2F2;
+    padding: 5%;
+}
+
+.bouton_recherche button
+{
+    font-family: 'ralewaythin', Arial, sans-serif;
+    background-color: #0065FC;
+    border-color: #0065FC;
+    font-size: 1em; 
+    font-weight: bold;
+    color: white;
+    padding: 12.8%;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Filtres */
+
+#filtres
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 10px;
+    max-width: 900px;
+}
+
+#filtres div:hover
+{
+    background-color:  #0065FC;
+}
+
+#filtres div
+{
+    font-weight: bold;
+    
+}
+
+.fa-money-bill-wave, .fa-heart, .fa-dog
+{
+    color:  #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    margin-right: 10px;
+    margin-left: -2px;
+}
+
+.fa-child
+{
+    color:  #0065FC;
+    background-color: #DEEBFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 60px 60px 60px 60px;
+    margin-right: 10px;
+    margin-left: -2px;
+}
+
+.economique, .romantique, .animaux
+{
+    border: 3px solid;
+    border-color: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    padding-right: 15px;
+    
+}
+
+.familial
+{
+    border: 3px solid;
+    border-color: #F2F2F2;
+    border-radius: 60px 60px 60px 60px;
+    padding-right: 15px;
+}
+
+#nombre_recherche p
+{
+    font-size: 1em;
+}
+
+.fa-info
+{
+    color: #0065FC;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px 25px 25px 25px;
+    margin-right: 10px;
+}
+
+/* Hébergements */
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.hebergements
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 25px 25px 25px 25px;
+    max-width: 1000px;
+}
+
+.hebergements h1
+{
+    padding-left: 15px;
+    
+}
+
+.hebergements h2, p, #blue-stars
+{
+    padding-left: 10px;
+    height: 15px;
+}
+
+.hebergements h2 
+{
+    font-size: 1em;
+    font-weight: bold;
 }
 
 
-ul {
+
+.hebergements #bottom
+{
+    padding-left: 5px;
+}
+
+
+.ligne1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.ligne1 img
+{
+    width: 15em;
+    height: 7.5em;
+    object-fit: cover;
+}
+
+.ligne2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.ligne2 img
+{
+    width: 15em;
+    height: 7.5em;
+    object-fit: cover;
+}
+
+#bottom p
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+.fa-chart-line
+{
+    padding-left: 100px;
+}
+
+#blue-stars
+{
+    color:#0065FC;
+}
+
+#grey-stars
+{
+    color:#F2F2F2;
+    margin-left: 5px;
+}
+
+.stars
+{
+    display: flex;
+}
+
+#cannebiere, #port, #mouettes, #mer, #panier, #amina
+{
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    border: 5px solid white;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    filter: drop-shadow(6px 6px 6px grey);
+       
+} 
+#cannebiere, #port, #mouettes, #mer, #panier, #amina a
+{
+    display: block;
+       
+}
+
+
+
+.hebergements a
+{
+    text-decoration: none;
+    color:#000000;
+}
+
+a:hover
+{
+    color:#000000;
+}
+
+.hebergements img
+{
+    border-radius: 25px 25px 0 0;
+    margin-bottom: -15px;
+}
+
+/*Aside */
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    max-width: 450px;
+}
+
+#soleil-du-matin, #au-coeur-de-leau, #toutbleuetblanc
+{
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    border: 5px solid white;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    width: 400px;
+
+       
+} 
+
+aside img
+{
+    border-radius: 25px 0 0 25px;    
+    object-fit:cover;
+    width: 9.5em;
+    height: 8.7em;
+}
+
+aside h2
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*Footer */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 100px;
+    max-width: 1000px;
+    background-color: #F2F2F2;
+}
+
+footer ul
+{
     list-style-type: none;
-  }
+    text-decoration: none;
+    padding-left: 0px;
+}
+
+footer a
+{
+    font-size: 1.1em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color:  #0065FC;
+}
+
+
