@@ -36,6 +36,11 @@ footer h1,  #filtres h1
     font-size: 1em;
 }
 
+em
+{
+    font-weight: bold;
+}
+
 /* Header */
 
 header
@@ -43,6 +48,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 1320px;
 }
 
 #logo
@@ -123,6 +129,7 @@ nav a:hover
     color: white;
     padding: 12.8%;
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
 
 /* Filtres */
@@ -135,6 +142,7 @@ nav a:hover
     margin-top: 20px;
     margin-left: 10px;
     max-width: 900px;
+    cursor: pointer;
 }
 
 #filtres div:hover
@@ -213,6 +221,7 @@ section
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 1300px;
 }
 
 .hebergements
@@ -316,17 +325,9 @@ section
     margin: 10px;
     padding-bottom: 10px;
     text-decoration: none;
-    filter: drop-shadow(6px 6px 6px grey);
+    filter: drop-shadow(4px 4px 4px grey);
        
 } 
-#cannebiere, #port, #mouettes, #mer, #panier, #amina a
-{
-    display: block;
-       
-}
-
-
-
 .hebergements a
 {
     text-decoration: none;
@@ -347,13 +348,11 @@ a:hover
 /*Aside */
 aside
 {
-    display: flex;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 25px 25px 25px 25px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 25px;
-    padding: 20px;
+    padding: 17px;
     max-width: 450px;
 }
 
@@ -362,28 +361,158 @@ aside
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
-    margin: 10px;
-    padding-bottom: 10px;
+    margin: 23px;        
+    width: 340px;
+    height: 145px;  
     text-decoration: none;
-    display: flex;
-    width: 400px;
-
-       
+    filter: drop-shadow(4px 4px 4px grey);
 } 
+
+
+aside a
+{
+    text-decoration: none;
+    color:#000000;
+}
 
 aside img
 {
     border-radius: 25px 0 0 25px;    
     object-fit:cover;
     width: 9.5em;
-    height: 8.7em;
+    height: 9em;
+    float: left;
 }
 
 aside h2
 {
     font-size: 1em;
     font-weight: bold;
+    padding-left: 20px;
 }
+
+aside p
+{
+    padding-left: 20px; 
+}
+
+.soleil-desc #blue-stars
+{
+    padding-top: 15px;
+    padding-left: 20px; 
+}
+
+aside .stars
+{
+    padding-top: 15px;
+    padding-left: 10px; 
+}
+
+.soleil-desc, .aucoeurdeleau-desc, .toutbleuetblanc-desc
+{
+
+   margin-bottom: -10px;
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+/* Activités */
+
+#activites
+{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+
+#activites img
+{
+    border-radius: 25px 25px 0 0;
+        
+}
+
+.colonne1 img
+{
+   object-fit:cover;
+   width:18em;
+   height:25em;
+}
+
+.pomegues img
+{
+    object-fit:cover;
+    object-position: center;
+   width:18em;
+   height:11em;
+}
+
+.frioul img
+{
+    object-fit:cover;
+    object-position: top;
+    width:18em;
+   height:9em;
+}
+
+.colonne3 img
+{
+    object-fit:cover;
+   width:18em;
+   height:25.5em;
+}
+
+.notredame img
+{
+    object-fit:cover;
+    object-position: center;
+   width:18em;
+   height:10em;
+}
+
+.longchamp img
+{
+    object-fit:cover;
+    object-position: center;
+   width:18em;
+   height:10em;
+}
+
+
+.colonne1, .pomegues, .frioul, .colonne3, .notredame, .longchamp
+{
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    margin: 20px;
+    padding-bottom: 1px;
+    box-shadow: 0 0 4px 4px  #F2F2F2;
+    text-decoration: none;
+    width: 18em;
+    height: fit-content;  
+}
+
+.colonne2 .pomegues
+{
+    margin-bottom: 35px;
+}
+
+.colonne4 .notredame
+{
+    margin-bottom: 35px;
+}
+
+#activites h1
+{
+    padding-left:20px;
+    font-size: 1em;
+}
+
+#activites a
+{
+    color: black;
+    text-decoration: none;
+}
+
 
 /*Footer */
 
@@ -391,10 +520,12 @@ footer
 {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-right: 100px;
-    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
     background-color: #F2F2F2;
+    width: 1240px;
+   
 }
 
 footer ul
@@ -417,4 +548,13 @@ footer a:hover
     color:  #0065FC;
 }
 
+footer li
+{
+    line-height: 1.7em;
+}
+
+#assistance
+{
+    padding-right: 300px;
+}
 
