@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="xs-devices.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="s-devices.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px)" href="m-devices.css" />
         <script src="https://kit.fontawesome.com/6a8c3e3ea1.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
@@ -16,8 +19,8 @@
                         
                         <nav>
                             <ul>
-                                <li><a href="#">Hébergements</a></li>
-                                <li><a href="#">Activités</a></li>
+                                <li><a href="#hebergements">Hébergements</a></li>
+                                <li><a href="#activites-t">Activités</a></li>
                                 <li><a href="#">S'inscrire</a></li>
                             </ul>
                         </nav>    
@@ -65,7 +68,7 @@
           
             <section>
                 <div class="hebergements">
-                    <h1>Hébergements à Marseille</h1> 
+                    <div id="hebergements"><h1>Hébergements à Marseille</h1> </div>
                     
                     <div class="ligne1">
 
@@ -234,7 +237,7 @@
 
             <section>
                 <div>
-                    <h1>Activités à Marseille</h1>
+                    <div id="activites-t"><h1>Activités à Marseille</h1></div>
 
                         <div id="activites">
                             <a href="">
