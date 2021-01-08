@@ -18,7 +18,7 @@
 
 body
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'ralew   aythin', Arial, sans-serif;
 }
 
 #bloc_page
@@ -68,6 +68,11 @@ nav ul
 {
     list-style-type: none;
     display: flex;
+}
+
+header em
+{
+    font-weight: bold;
 }
 
 nav li
