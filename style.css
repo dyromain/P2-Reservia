@@ -243,7 +243,7 @@ section
     
 }
 
-.hebergements h2, p, #blue-stars
+.hebergements h2, p, .blue-stars
 {
     padding-left: 10px;
     height: 15px;
@@ -304,15 +304,20 @@ section
     padding-left: 100px;
 }
 
-#blue-stars
+.blue-stars
 {
     color:#0065FC;
 }
 
-#grey-stars
+.stars .grey-stars
 {
     color:#F2F2F2;
     margin-left: 5px;
+}
+
+.grey-stars
+{
+    color:#F2F2F2;
 }
 
 .stars
@@ -399,7 +404,7 @@ aside p
     padding-left: 20px; 
 }
 
-.soleil-desc #blue-stars
+.soleil-desc .blue-stars
 {
     padding-top: 15px;
     padding-left: 20px; 
