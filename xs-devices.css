@@ -83,18 +83,22 @@ nav a
     padding-top: 30px;
 }
 
-nav #hebergements-nav, #activites-nav, a:hover
+nav #hebergements-nav, #activites-nav a:hover
 {
     border-bottom: 2px solid #0065FC;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
 }
-
 
 nav #hebergements-nav, #activites-nav
 {
     border-bottom: 2px solid #F2F2F2;
     width: 600px;
     padding-bottom: 10px;
+}
+
+nav #hebergements-nav
+{
+    border-bottom: 2px solid #0065FC
 }
 
 
