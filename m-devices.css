@@ -236,8 +236,9 @@ nav #hebergements-nav, #activites-nav
     font-size: smaller;
     margin-top: 20px;
     margin-bottom: 5px;
-    margin-right:80px;
+    margin-right:383px;
     font-weight: lighter;
+    float: right;
 }
 
 
@@ -418,7 +419,7 @@ a:hover
 aside
 {
     background-color: #F2F2F2;
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 17px;
 }
 
