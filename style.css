@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.eot');
-    src: url('raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('raleway-variablefont_wght-webfont.ttf') format('truetype'),
-         url('raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    src: url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.eot');
+    src: url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.woff') format('woff'),
+         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.ttf') format('truetype'),
+         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -105,6 +105,15 @@ nav a:hover
      
 }
 
+.fa-search
+{
+    
+    color:#0065FC;
+       
+}
+
+
+
 .fa-map-marker-alt
 {
     background-color:#F2F2F2 ;
@@ -115,7 +124,7 @@ nav a:hover
 
 #barre-recherche
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'raleway', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     border-color: #F2F2F2;
@@ -124,7 +133,7 @@ nav a:hover
 
 .bouton_recherche button
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'raleway', Arial, sans-serif;
     background-color: #0065FC;
     border-color: #0065FC;
     font-size: 1em; 
@@ -136,6 +145,17 @@ nav a:hover
 }
 
 /* Filtres */
+
+#econo-familial
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-left: 10px;
+    max-width: 900px;
+    cursor: pointer;
+}
 
 #filtres
 {
@@ -197,7 +217,9 @@ nav a:hover
     border-color: #F2F2F2;
     border-radius: 60px 60px 60px 60px;
     padding-right: 15px;
+    margin-left: 40px;
 }
+
 
 #nombre_recherche p
 {
