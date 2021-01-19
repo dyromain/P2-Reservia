@@ -168,7 +168,7 @@ nav a:hover
     cursor: pointer;
 }
 
-#filtres div:hover
+.economique:hover, .familial:hover, .romantique:hover, .animaux:hover
 {
     background-color:  #0065FC;
 }

@@ -83,11 +83,18 @@ nav a
     padding-top: 30px;
 }
 
-nav #hebergements-nav, #activites-nav a:hover
+/*nav #hebergements-nav, #activites-nav a:hover
 {
     border-bottom: 2px solid #0065FC;
     padding-bottom: 10px; 
+}*/
+
+#activites-nav:hover, #hebergements-nav:hover{
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 10px; 
 }
+
+
 
 nav #hebergements-nav, #activites-nav
 {
@@ -96,10 +103,10 @@ nav #hebergements-nav, #activites-nav
     padding-bottom: 10px;
 }
 
-nav #hebergements-nav
+/*nav #hebergements-nav
 {
     border-bottom: 2px solid #0065FC
-}
+}*/
 
 
 #activites-nav
@@ -181,7 +188,7 @@ nav #hebergements-nav
     cursor: pointer;
 }
 
-#filtres div:hover
+.economique:hover, .familial:hover, .romantique:hover, .animaux:hover
 {
     background-color:  #0065FC;
 }
@@ -645,5 +652,4 @@ footer li
 {
     line-height: 1.7em;
 }
-
 
