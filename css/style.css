@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'ralewaythin';
-    src: url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.eot');
-    src: url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.woff') format('woff'),
-         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.woff2') format('woff2'),
-         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.ttf') format('truetype'),
-         url('/Openclassrooms/Projet2/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+    src: url('Projet2/raleway/raleway-thin-webfont.eot');
+    src: url('Projet2/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Projet2/raleway/raleway-thin-webfont.woff') format('woff'),
+         url('Projet2/raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('Projet2/raleway/raleway-thin-webfont.ttf') format('truetype'),
+         url('Projet2/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,7 +48,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 1320px;
+    width: auto;
 }
 
 #logo
@@ -124,7 +124,7 @@ nav a:hover
 
 #barre-recherche
 {
-    font-family: 'raleway', Arial, sans-serif;
+    font-family: 'ralewaythin', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     border-color: #F2F2F2;
@@ -133,7 +133,7 @@ nav a:hover
 
 .bouton_recherche button
 {
-    font-family: 'raleway', Arial, sans-serif;
+    font-family: 'ralewaythin', Arial, sans-serif;
     background-color: #0065FC;
     border-color: #0065FC;
     font-size: 1em; 
@@ -153,7 +153,6 @@ nav a:hover
     align-items: baseline;
     margin-top: 20px;
     margin-left: 10px;
-    max-width: 900px;
     cursor: pointer;
 }
 
@@ -164,7 +163,7 @@ nav a:hover
     align-items: baseline;
     margin-top: 20px;
     margin-left: 10px;
-    max-width: 900px;
+    width: 1000px;
     cursor: pointer;
 }
 
@@ -246,7 +245,7 @@ section
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 1300px;
+    width: auto;
 }
 
 .hebergements
@@ -256,7 +255,7 @@ section
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 25px 25px 25px 25px;
-    max-width: 1000px;
+    width:900px;
 }
 
 .hebergements h1
@@ -453,7 +452,7 @@ aside .stars
 {
     display:flex;
     justify-content: space-between;
-    max-width: 1300px;
+    width: 1400px;
 }
 #activites-t
 {
@@ -558,7 +557,7 @@ footer
     margin-bottom: 20px;
     padding: 30px;
     background-color: #F2F2F2;
-    width: 1240px;
+    width: auto;
    
 }
 
