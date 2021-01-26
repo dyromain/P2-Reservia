@@ -1,26 +1,61 @@
 /* Définition de la police */
 
 @font-face {
-    font-family: 'ralewaylight';
-    src: url('raleway/light/raleway-light-webfont.eot');
-    src: url('raleway/light/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway/light/raleway-light-webfont.woff2') format('woff2'),
-         url('raleway/light/raleway-light-webfont.woff') format('woff'),
-         url('raleway/light/raleway-light-webfont.ttf') format('truetype'),
-         url('raleway/light/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-family: 'ralewaybold';
+    src: url('raleway/raleway-bold-webfont.eot');
+    src: url('raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('raleway/raleway-bold-webfont.woff') format('woff'),
+         url('raleway/raleway-bold-webfont.ttf') format('truetype'),
+         url('raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('raleway/raleway-light-webfont.eot');
+    src: url('raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('raleway/raleway-light-webfont.woff') format('woff'),
+         url('raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway/raleway-regular-webfont.eot');
+    src: url('raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway/raleway-regular-webfont.woff') format('woff'),
+         url('raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 @font-face {
     font-family: 'ralewaysemibold';
-    src: url('raleway/semibold/raleway-semibold-webfont.eot');
-    src: url('raleway/semibold/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway/semibold/raleway-semibold-webfont.woff2') format('woff2'),
-         url('raleway/semibold/raleway-semibold-webfont.woff') format('woff'),
-         url('raleway/semibold/raleway-semibold-webfont.ttf') format('truetype'),
-         url('raleway/semibold/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    src: url('raleway/raleway-semibold-webfont.eot');
+    src: url('raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-semibold-webfont.woff2') format('woff2'),
+         url('raleway/raleway-semibold-webfont.woff') format('woff'),
+         url('raleway/raleway-semibold-webfont.ttf') format('truetype'),
+         url('raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -30,7 +65,7 @@
 
 body
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewayregular', Arial, sans-serif;
 }
 
 #bloc_page
@@ -42,7 +77,7 @@ body
 h1
 {
     font-size: 1.5em;
-    font-family: 'ralewaysemibold', Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 footer h1,  #filtres h1
@@ -50,10 +85,6 @@ footer h1,  #filtres h1
     font-size: 1em;
 }
 
-em
-{
-    font-weight: bold;
-}
 
 /* Header */
 
@@ -62,7 +93,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: auto;
+    width: 1300px;
 }
 
 #logo
@@ -91,7 +122,7 @@ nav li
 nav a
 {
     font-size: 1.2em;
-    color:#0065FC;
+    color:#000000;
     text-decoration: none;
     padding-bottom: 3px;
     padding-top: 30px;
@@ -99,11 +130,16 @@ nav a
 
 nav a:hover
 {
-    color:#000000;
+    color:#0065FC;
     border-top: 2px solid #0065FC ;
     padding-top: 30px;
 }
 
+#sinscrire li a
+{
+    font-weight:bolder;
+    color:#0065FC;
+}
 
 #intro p
 {
@@ -131,29 +167,27 @@ nav a:hover
 .fa-map-marker-alt
 {
     background-color:#F2F2F2 ;
-    padding: 1%;
+    padding: 15px;
     border-radius: 10px 0 0 10px;
 
 }
 
 #barre-recherche
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 1em;
-    font-weight: bold;
-    border-color: #F2F2F2;
-    padding: 5%;
+    border: solid 1px #F2F2F2;
+    padding: 6%;
 }
 
 .bouton_recherche button
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
     background-color: #0065FC;
-    border-color: #0065FC;
+    border: #0065FC;
     font-size: 1em; 
-    font-weight: bold;
     color: white;
-    padding: 12.8%;
+    padding: 15.8%;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
 }
@@ -166,7 +200,7 @@ nav a:hover
     justify-content: space-between;
     align-items: baseline;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: -16px;
     cursor: pointer;
 }
 
@@ -177,8 +211,9 @@ nav a:hover
     align-items: baseline;
     margin-top: 20px;
     margin-left: 10px;
-    width: 1000px;
+    width: 840px;
     cursor: pointer;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 .economique:hover, .familial:hover, .romantique:hover, .animaux:hover
@@ -188,7 +223,7 @@ nav a:hover
 
 #filtres div
 {
-    font-weight: bold;
+    font-weight: bolder;
     
 }
 
@@ -230,7 +265,7 @@ nav a:hover
     border-color: #F2F2F2;
     border-radius: 60px 60px 60px 60px;
     padding-right: 15px;
-    margin-left: 40px;
+    margin-left: 33px;
 }
 
 
@@ -259,7 +294,7 @@ section
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: auto;
+    width: 1300px;
 }
 
 .hebergements
@@ -269,7 +304,7 @@ section
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 25px 25px 25px 25px;
-    width:900px;
+    width:800px;
 }
 
 .hebergements h1
@@ -286,6 +321,7 @@ section
 
 .hebergements h2 
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
@@ -328,6 +364,7 @@ section
 
 #bottom p
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
@@ -395,7 +432,7 @@ aside
     border-radius: 25px 25px 25px 25px;
     margin-top: 20px;
     margin-bottom: 25px;
-    padding: 17px;
+    padding: 20px;
     max-width: 450px;
 }
 
@@ -404,7 +441,7 @@ aside
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
-    margin: 23px;        
+    margin-bottom: 23px;        
     width: 340px;
     height: 145px;  
     text-decoration: none;
@@ -429,6 +466,7 @@ aside img
 
 aside h2
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     padding-left: 20px;
@@ -466,7 +504,7 @@ aside .stars
 {
     display:flex;
     justify-content: space-between;
-    width: 1400px;
+    width: auto;
 }
 #activites-t
 {
@@ -571,7 +609,7 @@ footer
     margin-bottom: 20px;
     padding: 30px;
     background-color: #F2F2F2;
-    width: auto;
+    width: 1240px;
    
 }
 

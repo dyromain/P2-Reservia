@@ -1,26 +1,61 @@
 /* Définition de la police */
 
 @font-face {
-    font-family: 'ralewaylight';
-    src: url('raleway/light/raleway-light-webfont.eot');
-    src: url('raleway/light/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway/light/raleway-light-webfont.woff2') format('woff2'),
-         url('raleway/light/raleway-light-webfont.woff') format('woff'),
-         url('raleway/light/raleway-light-webfont.ttf') format('truetype'),
-         url('raleway/light/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-family: 'ralewaybold';
+    src: url('raleway/raleway-bold-webfont.eot');
+    src: url('raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('raleway/raleway-bold-webfont.woff') format('woff'),
+         url('raleway/raleway-bold-webfont.ttf') format('truetype'),
+         url('raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('raleway/raleway-light-webfont.eot');
+    src: url('raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('raleway/raleway-light-webfont.woff') format('woff'),
+         url('raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway/raleway-regular-webfont.eot');
+    src: url('raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway/raleway-regular-webfont.woff') format('woff'),
+         url('raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 @font-face {
     font-family: 'ralewaysemibold';
-    src: url('raleway/semibold/raleway-semibold-webfont.eot');
-    src: url('raleway/semibold/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway/semibold/raleway-semibold-webfont.woff2') format('woff2'),
-         url('raleway/semibold/raleway-semibold-webfont.woff') format('woff'),
-         url('raleway/semibold/raleway-semibold-webfont.ttf') format('truetype'),
-         url('raleway/semibold/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    src: url('raleway/raleway-semibold-webfont.eot');
+    src: url('raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-semibold-webfont.woff2') format('woff2'),
+         url('raleway/raleway-semibold-webfont.woff') format('woff'),
+         url('raleway/raleway-semibold-webfont.ttf') format('truetype'),
+         url('raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -30,7 +65,7 @@
 
 body
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewayregular', Arial, sans-serif;
 }
 
 #bloc_page
@@ -42,16 +77,13 @@ body
 h1
 {
     font-size: 1.2em;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 footer h1,  #filtres h1
 {
     font-size: 0.9em;
-}
-
-em
-{
-    font-weight: bold;
+    margin-left: 6px;
 }
 
 /* Header */
@@ -90,7 +122,7 @@ nav li
 nav a
 {
     font-size: 0.9em;
-    color:#0065FC;
+    color:#000000;
     text-decoration: none;
     padding-bottom: 3px;
     padding-top: 30px;
@@ -103,10 +135,21 @@ nav a
 }*/
 
 #activites-nav:hover, #hebergements-nav:hover{
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
+    color:#0065FC;
     padding-bottom: 10px; 
 }
 
+nav a:hover
+{
+    color:#0065FC;
+}
+
+#sinscrire li a
+{
+    font-weight:bolder;
+    color:#0065FC;
+}
 
 
 nav #hebergements-nav, #activites-nav
@@ -130,13 +173,14 @@ nav #hebergements-nav, #activites-nav
 
 #intro h1
 {
-    padding-left: 25px;
+    padding-left: 13px;
+    padding-right: 60px;
 }
 
 #intro p
 {
     font-size: 0.9em;
-    padding-left: 25px;
+    padding-left: 13px;
     padding-bottom: 10px;
 }
 
@@ -176,10 +220,10 @@ nav #hebergements-nav, #activites-nav
 
 #barre-recherche
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: smaller;
     font-weight: bold;
-    border-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
     padding: 1.2em;
 }
 
@@ -197,7 +241,7 @@ nav #hebergements-nav, #activites-nav
     justify-content: space-between;
     align-items: baseline;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -208,6 +252,7 @@ nav #hebergements-nav, #activites-nav
 
 #filtres div
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-weight: bold;
     
 }
@@ -300,7 +345,7 @@ section
 
 .hebergements
 {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     background-color: none;
     border-radius: 25px 25px 25px 25px;
     max-width: 500px;
@@ -329,20 +374,25 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .hebergements h2 
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
 }
 
 .hebergements p 
-{
+{    
     font-size: 0.75em;
+  
 }
 
 
 
 .hebergements #bottom
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
+    font-weight: bold;
     padding-left: 5px;
+    margin-top:20px;
 }
 
 
@@ -387,7 +437,8 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .fa-chart-line
 {
-    padding-left: 100px;
+    padding-left: 120px;
+    font-size: larger;
 }
 
 .blue-stars
@@ -444,7 +495,8 @@ aside
 {
     background-color: #F2F2F2;
     margin-top: 70px;
-    padding: 17px;
+    padding: 28px;
+    margin-left:-11px;
 }
 
 aside h2, p
@@ -459,7 +511,7 @@ margin-top: 0;
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
     margin-bottom: 20px;        
-    width: 300px;
+    width: 20em;
     height: 145px;  
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px grey);
@@ -481,12 +533,19 @@ aside img
     float: left;
 }
 
+aside h1
+{
+    margin-bottom: 30px;
+}
+
 aside h2
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
     padding-left: 20px;
     padding-top: 15px;
+    width: 125px;
 }
 
 aside p
@@ -636,9 +695,9 @@ footer
     margin-bottom: 20px;
     padding: 30px;
     background-color: #F2F2F2;
-    width: 350px;
+    width: 320px;
     flex-direction: column;
-   
+    margin-left: -7px;
 }
 
 footer ul
@@ -654,6 +713,7 @@ footer a
     color: black;
     padding-bottom: 3px;
     text-decoration: none;
+    margin-left: 7px;
 }
 
 footer a:hover
