@@ -1,13 +1,26 @@
 /* Définition de la police */
 
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('Projet2/raleway/raleway-thin-webfont.eot');
-    src: url('Projet2/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Projet2/raleway/raleway-thin-webfont.woff') format('woff'),
-         url('Projet2/raleway/raleway-thin-webfont.woff2') format('woff2'),
-         url('Projet2/raleway/raleway-thin-webfont.ttf') format('truetype'),
-         url('Projet2/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+    font-family: 'ralewaylight';
+    src: url('/Projet2/raleway/light/raleway-light-webfont.eot');
+    src: url('/Projet2/raleway/light/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Projet2/raleway/light/raleway-light-webfont.woff2') format('woff2'),
+         url('/Projet2/raleway/light/raleway-light-webfont.woff') format('woff'),
+         url('/Projet2/raleway/light/raleway-light-webfont.ttf') format('truetype'),
+         url('/Projet2/raleway/light/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('/Projet2/raleway/semibold/raleway-semibold-webfont.eot');
+    src: url('/Projet2/raleway/semibold/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Projet2/raleway/semibold/raleway-semibold-webfont.woff2') format('woff2'),
+         url('/Projet2/raleway/semibold/raleway-semibold-webfont.woff') format('woff'),
+         url('/Projet2/raleway/semibold/raleway-semibold-webfont.ttf') format('truetype'),
+         url('/Projet2/raleway/semibold/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -17,18 +30,19 @@
 
 body
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
 }
 
 #bloc_page
 {
-    width: 1400px;
-    margin: auto;
+    width: auto;
+    margin: 0 auto;
 }
 
 h1
 {
     font-size: 1.5em;
+    font-family: 'ralewaysemibold', Arial, sans-serif;
 }
 
 footer h1,  #filtres h1
@@ -124,7 +138,7 @@ nav a:hover
 
 #barre-recherche
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     border-color: #F2F2F2;
@@ -133,7 +147,7 @@ nav a:hover
 
 .bouton_recherche button
 {
-    font-family: 'ralewaythin', Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
     background-color: #0065FC;
     border-color: #0065FC;
     font-size: 1em; 
