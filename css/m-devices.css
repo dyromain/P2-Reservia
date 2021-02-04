@@ -60,32 +60,30 @@
     font-style: normal;
 
 }
+
 /* Eléments principaux de la page */
 
 body
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewayregular', Arial, sans-serif;
 }
 
 #bloc_page
 {
-    width: auto;
+    max-width: 95%;
     margin: 0 auto;
 }
 
 h1
 {
     font-size: 1.2em;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 footer h1,  #filtres h1
 {
     font-size: 0.9em;
-}
-
-em
-{
-    font-weight: bold;
+    margin-left: 6px;
 }
 
 /* Header */
@@ -93,7 +91,8 @@ em
 header
 {
     display: flex;
-    flex-direction:column;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 #logo
@@ -107,68 +106,57 @@ header
     height: 50px;
   }
 
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    padding-left: 0;
-    
-}
-
-nav li
-{
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-nav a
-{
-    font-size: 0.9em;
-    color:#0065FC;
-    text-decoration: none;
-    padding-bottom: 3px;
-    padding-top: 30px;
-}
-
-nav #hebergements-nav, #activites-nav, a:hover
-{
-    border-bottom: 2px solid #0065FC;
-    padding-bottom: 10px;
-}
-
-
-nav #hebergements-nav, #activites-nav
-{
-    border-bottom: 2px solid #F2F2F2;
-    padding-bottom: 10px;
-}
-
-
-#hebergements-nav, #activites-nav
-{
-    padding-left: 70px;
-    padding-right: 70px;
-}
+  nav ul
+  {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  nav li
+  {
+      margin-right: 30px;
+      margin-left: 30px;
+  }
+  
+  nav a
+  {
+      font-size: 1em;
+      color:#000000;
+      text-decoration: none;
+      padding-bottom: 3px;
+      padding-bottom: 20px;
+  }
+  
+  nav a:hover
+  {
+      color:#0065FC;
+      border-bottom: 2px solid #0065FC ;
+      padding-bottom: 20px;
+  }
+  
+  nav > ul > li:nth-child(3) > a
+  {
+      font-weight:bolder;
+      color:#0065FC;
+  }
 
 
 #intro h1
 {
-   
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 45px;
+    margin-top: 30px;
 }
 
 #intro p
 {
     font-size: 0.9em;
+    padding-left: 15px;
+    margin-bottom: 30px;
     
 }
 
-#sinscrire
-{
-    position: absolute;
-    right: 200px;
-    top: 27px;
-}
+
 
 /*Barre de recherche*/
 
@@ -176,6 +164,7 @@ nav #hebergements-nav, #activites-nav
 {
     display: flex;
     flex-wrap: nowrap;
+    margin-top:25px;
      
 }
 
@@ -199,10 +188,10 @@ nav #hebergements-nav, #activites-nav
 
 #barre-recherche
 {
-    font-family: 'ralewaylight', Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: smaller;
     font-weight: bold;
-    border-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
     padding: 1.2em;
 }
 
@@ -216,11 +205,10 @@ nav #hebergements-nav, #activites-nav
 #filtres
 {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -231,6 +219,7 @@ nav #hebergements-nav, #activites-nav
 
 #filtres div
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-weight: bold;
     
 }
@@ -263,7 +252,7 @@ nav #hebergements-nav, #activites-nav
     border: 3px solid;
     border-color: #F2F2F2;
     border-radius: 25px 25px 25px 25px;
-    padding-right: 15px;
+    padding-right: 10px;
     margin: 5px;
     font-size: smaller;
 }
@@ -273,9 +262,10 @@ nav #hebergements-nav, #activites-nav
     border: 3px solid;
     border-color: #F2F2F2;
     border-radius: 60px 60px 60px 60px;
-    padding-right: 15px;
+    padding-right: 10px;
     margin: 5px;
     font-size: smaller;
+    margin-left: 16px;
 }
 
 #nombre_recherche p
@@ -283,9 +273,8 @@ nav #hebergements-nav, #activites-nav
     font-size: smaller;
     margin-top: 20px;
     margin-bottom: 5px;
-    margin-right:383px;
+    margin-right:50px;
     font-weight: lighter;
-    float: right;
 }
 
 
@@ -299,8 +288,7 @@ nav #hebergements-nav, #activites-nav
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 25px 25px 25px 25px;
-    font-size: small;
-    float:left;
+    font-size: smaller;
     margin-right: 5px;
 }
 
@@ -323,10 +311,10 @@ section
 
 .hebergements
 {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     background-color: none;
     border-radius: 25px 25px 25px 25px;
-    
+    max-width: 500px;
     
 }
 
@@ -340,7 +328,7 @@ section
 .hebergements h2, p, .blue-stars
 {
     padding-left: 10px;
-    height: 15px;
+    height: 10px;
     
 }
 
@@ -352,20 +340,25 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .hebergements h2 
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
 }
 
 .hebergements p 
-{
+{    
     font-size: 0.75em;
+  
 }
 
 
 
 .hebergements #bottom
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
+    font-weight: bold;
     padding-left: 5px;
+    margin-top:20px;
 }
 
 
@@ -374,14 +367,13 @@ aside .hebergements, .blue-stars, .grey-stars
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-direction:column;
        
 }
 
 .ligne1 img
 {
-    width: 20em;
-    height: 10em;
+    width: 13.4em;
+    height: 8em;
     object-fit: cover;
 }
 
@@ -390,13 +382,12 @@ aside .hebergements, .blue-stars, .grey-stars
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-direction:column;
 }
 
 .ligne2 img
 {
-    width: 20em;
-    height: 10em;
+    width: 13.4em;
+    height: 8em;
     object-fit: cover;
 }
 
@@ -410,7 +401,8 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .fa-chart-line
 {
-    padding-left: 100px;
+    padding-left: 0.5em;
+    font-size: 1.1em;
 }
 
 .blue-stars
@@ -439,10 +431,11 @@ aside .hebergements, .blue-stars, .grey-stars
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
-    margin: 10px;
+    margin: 7px;
     padding-bottom: 10px;
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px #F2F2F2);
+    width: 19.5em;
        
 } 
 .hebergements a
@@ -466,8 +459,8 @@ a:hover
 aside
 {
     background-color: #F2F2F2;
-    margin-top: 60px;
-    padding: 17px;
+    margin-top: 35px;
+    padding: 18px;
 }
 
 aside h2, p
@@ -482,12 +475,20 @@ margin-top: 0;
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
     margin-bottom: 20px;        
-    width: 300px;
-    height: 145px;  
+    width: 13em;
+    height: 16em;  
     text-decoration: none;
-    filter: drop-shadow(4px 4px 4px grey);
+    filter: drop-shadow(4px 4px 4px #bdbdbd);
+    margin: 4px
 } 
 
+.plus-pop
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
 
 aside a
 {
@@ -497,19 +498,28 @@ aside a
 
 aside img
 {
-    border-radius: 25px 0 0 25px;    
+    border-radius: 25px 25px 0 0;    
     object-fit:cover;
-    width: 8em;
-    height: 9em;
-    float: left;
+    width: 13em;
+    height: 10em;
+    
+}
+
+aside h1
+{
+    margin-bottom: 30px;
 }
 
 aside h2
 {
+    font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
     padding-left: 20px;
     padding-top: 15px;
+    padding-right: 31px;
+    padding-top: 4px;
+   
 }
 
 aside p
@@ -520,21 +530,18 @@ aside p
 
 .soleil-desc .blue-stars
 {
-    padding-top: 30px;
     padding-left: 20px; 
     
 }
 
 .aucoeurdeleau-desc .stars
 {
-    padding-top: 30px;
-    padding-left: 10px; 
+   padding-left: 10px; 
    
 }
 
 .toutbleuetblanc-desc .stars
 {
-    padding-top: 30px;
     padding-left: 10px; 
    
 }
@@ -542,20 +549,27 @@ aside p
 .soleil-desc, .aucoeurdeleau-desc, .toutbleuetblanc-desc
 {
 
-   margin-bottom: -10px;
-   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-   
+    margin-bottom: -10px;
+    display: flex;
+    flex-wrap:wrap;
+          
 }
+
+
 /* Activités */
 
 #activites
 {
     display:flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-wrap:wrap;
 }
+
+#activites-t > h1
+{
+margin-bottom: 0;
+margin-left: -5px;
+}
+
 #activites-t
 {
     padding-left:20px;
@@ -619,6 +633,7 @@ aside p
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     margin: 20px;
+    margin-left:17px;
     padding-bottom: 1px;
     box-shadow: 0 0 4px 4px  #F2F2F2;
     text-decoration: none;
@@ -648,6 +663,10 @@ aside p
     text-decoration: none;
 }
 
+#activites > div.colonne2
+{
+    order:1;
+}
 
 /*Footer */
 
@@ -659,8 +678,7 @@ footer
     margin-bottom: 20px;
     padding: 30px;
     background-color: #F2F2F2;
-    flex-direction: column;
-   
+    max-width: 100%;
 }
 
 footer ul
@@ -676,6 +694,7 @@ footer a
     color: black;
     padding-bottom: 3px;
     text-decoration: none;
+    margin-left: 7px;
 }
 
 footer a:hover
@@ -687,5 +706,4 @@ footer li
 {
     line-height: 1.7em;
 }
-
 
