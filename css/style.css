@@ -68,9 +68,16 @@ h1
     font-family: 'ralewaybold', Arial, sans-serif;
 }
 
-footer h1,  #filtres h1
+h2
+{
+    font-size: 1.5em;
+    font-family: 'ralewaybold', Arial, sans-serif;
+}
+
+h3
 {
     font-size: 1em;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 
@@ -208,10 +215,9 @@ nav > ul > li:nth-child(3) > a
     background-color:  #0065FC;
 }
 
-#filtres div
+#filtres > h2
 {
-    font-weight: bolder;
-    
+    font-size:1em;
 }
 
 .fa-money-bill-wave, .fa-heart, .fa-dog
@@ -255,6 +261,16 @@ nav > ul > li:nth-child(3) > a
     margin-left: 33px;
 }
 
+#nombre_recherche
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 0.5;
+    margin-top: 20px;
+}
+}
+
 
 #nombre_recherche p
 {
@@ -272,7 +288,7 @@ nav > ul > li:nth-child(3) > a
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 25px 25px 25px 25px;
-    margin-right: 10px;
+    font-size: smaller;
 }
 
 /* Hébergements */
@@ -295,26 +311,16 @@ section
     padding-bottom: 30px;
 }
 
-.hebergements h1
+.hebergements h2
 {
     padding-left: 15px;
-    margin-bottom: 10px;
 }
 
-.hebergements h2, p, .blue-stars
+.hebergements h3, p, .blue-stars
 {
     padding-left: 10px;
     height: 10px;
 }
-
-.hebergements h2 
-{
-    font-family: 'ralewaybold', Arial, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-
 
 .hebergements #bottom
 {
@@ -353,7 +359,7 @@ section
 #bottom p
 {
     font-family: 'ralewaybold', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -361,7 +367,7 @@ section
 
 .fa-chart-line
 {
-    padding-left: 90px;
+    padding-left: 85px;
 }
 
 .blue-stars
@@ -457,12 +463,18 @@ aside img
     float: left;
 }
 
-aside h2
+aside h3
+{
+    padding-left: 20px;
+}
+
+#bloc_page > section:nth-child(6) > aside > h2
 {
     font-family: 'ralewaybold', Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 3px;
+    margin-bottom: 37px;
 }
 
 aside p
@@ -502,6 +514,12 @@ aside .stars
     justify-content: space-between;
     margin-left: -18px;
 }
+
+#activites-t > h2
+{
+    padding-left: 10px;
+}
+
 #activites-t
 {
     padding-left:10px;
@@ -569,7 +587,7 @@ aside .stars
 {
     background-color: white;
     border-radius: 25px 25px 25px 25px;
-    margin: 24px;
+    margin: 22px;
     padding-bottom: 1px;
     box-shadow: 0 0 4px 4px  #F2F2F2;
     text-decoration: none;
@@ -587,7 +605,7 @@ aside .stars
     margin-bottom: 35px;
 }
 
-#activites h1
+#activites h3
 {
     padding-left:20px;
     font-size: 1em;
@@ -622,7 +640,7 @@ footer ul
 
 footer a
 {
-    font-size: 1.1em;
+    font-size: 1em;
     color: black;
     padding-bottom: 3px;
     text-decoration: none;
