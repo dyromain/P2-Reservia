@@ -171,7 +171,7 @@ nav > ul > li:nth-child(3) > a
     font-family: 'ralewaybold', Arial, sans-serif;
     font-size: 1em;
     border: solid 1px #F2F2F2;
-    padding: 6%;
+    padding: 13px;
 }
 
 .bouton_recherche button
@@ -194,7 +194,6 @@ nav > ul > li:nth-child(3) > a
     justify-content: space-between;
     align-items: baseline;
     margin-top: 10px;
-    margin-left: -16px;
     cursor: pointer;
 }
 
@@ -218,6 +217,7 @@ nav > ul > li:nth-child(3) > a
 #filtres > h2
 {
     font-size:1em;
+    margin-left:-10px;
 }
 
 .fa-money-bill-wave, .fa-heart, .fa-dog
@@ -298,7 +298,8 @@ section
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 20%;
+    max-width: 100%;
+    
 }
 
 .hebergements
@@ -306,9 +307,10 @@ section
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: #F2F2F2;
-    padding: 20px;
+    padding: 14px;
     border-radius: 25px 25px 25px 25px;
     padding-bottom: 30px;
+    width:70%;
 }
 
 .hebergements h2
@@ -337,7 +339,7 @@ section
 
 .ligne1 img
 {
-    width: 15em;
+    width:100%;
     height: 7.5em;
     object-fit: cover;
 }
@@ -351,7 +353,7 @@ section
 
 .ligne2 img
 {
-    width: 15em;
+    width: 100%;
     height: 7.5em;
     object-fit: cover;
 }
@@ -367,7 +369,7 @@ section
 
 .fa-chart-line
 {
-    padding-left: 85px;
+    padding-left: 21%;
 }
 
 .blue-stars
@@ -393,6 +395,16 @@ section
     display: flex;
 }
 
+#port > a > div
+{
+    height:15px;
+}
+
+#amina > a > div
+{
+    height:15px;
+}
+
 #cannebiere, #port, #mouettes, #mer, #panier, #amina
 {
     background-color: white;
@@ -402,6 +414,7 @@ section
     padding-bottom: 10px;
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px #bdbdbd);
+    width: 30%;
        
 } 
 .hebergements a
@@ -429,10 +442,10 @@ aside
     margin-top: 20px;
     margin-bottom: 25px;
     margin-left: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
     padding-bottom: 7px;
     padding-top: 16px;
+    width:30%;
 }
 
 #soleil-du-matin, #au-coeur-de-leau, #toutbleuetblanc
@@ -441,7 +454,7 @@ aside
     border-radius: 25px 25px 25px 25px;
     border: 5px solid white;
     margin-bottom: 23px;        
-    width: 336px;
+    width: 92%;
     height: 145px;  
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px #bdbdbd);
@@ -458,7 +471,7 @@ aside img
 {
     border-radius: 25px 0 0 25px;    
     object-fit:cover;
-    width: 8.5em;
+    width: 40%;
     height: 9em;
     float: left;
 }
@@ -466,6 +479,7 @@ aside img
 aside h3
 {
     padding-left: 20px;
+    padding-right:20px;
 }
 
 #bloc_page > section:nth-child(6) > aside > h2
@@ -499,8 +513,6 @@ aside .stars
 
 .soleil-desc, .aucoeurdeleau-desc, .toutbleuetblanc-desc
 {
-
-    margin-bottom: -10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -512,17 +524,6 @@ aside .stars
 {
     display:flex;
     justify-content: space-between;
-    margin-left: -18px;
-}
-
-#activites-t > h2
-{
-    padding-left: 10px;
-}
-
-#activites-t
-{
-    padding-left:10px;
 }
 
 #activites-t h1
@@ -539,7 +540,7 @@ aside .stars
 .colonne1 img
 {
    object-fit:cover;
-   width:18.3em;
+   width:100%;
    height:25em;
 }
 
@@ -547,7 +548,7 @@ aside .stars
 {
     object-fit:cover;
     object-position: center;
-    width:18.3em;
+    width:100%;
     height:11em;
 }
 
@@ -555,14 +556,14 @@ aside .stars
 {
     object-fit:cover;
     object-position: top;
-    width:18.3em;
+    width:100%;
     height:9em;
 }
 
 .colonne3 img
 {
     object-fit:cover;
-    width:18.3em;
+    width:100%;
     height:25.5em;
 }
 
@@ -570,7 +571,7 @@ aside .stars
 {
     object-fit:cover;
     object-position: center;
-    width:18.3em;
+    width:100%;
     height:10em;
 }
 
@@ -578,7 +579,7 @@ aside .stars
 {
     object-fit:cover;
     object-position: center;
-    width:18.3em;
+    width:100%;
     height:10em;
 }
 
@@ -587,12 +588,27 @@ aside .stars
 {
     background-color: white;
     border-radius: 25px 25px 25px 25px;
-    margin: 22px;
     padding-bottom: 1px;
     box-shadow: 0 0 4px 4px  #F2F2F2;
     text-decoration: none;
-    width: 18.3em;
     height: fit-content;  
+}
+
+#activites > div.colonne1
+{
+    width:85%;
+}
+
+.colonne2, .colonne4
+{
+    width: 85%;
+    margin-left: 35px;
+}
+
+#activites > div.colonne3
+{
+    width: 85%;
+    margin-left: 35px;
 }
 
 .colonne2 .pomegues
@@ -628,7 +644,7 @@ footer
     margin-bottom: 20px;
     padding: 30px;
     background-color: #F2F2F2;
-    max-width: 100%;
+    padding-left: 6%;
 }
 
 footer ul
@@ -660,4 +676,5 @@ footer li
 {
     padding-right: 300px;
 }
+
 

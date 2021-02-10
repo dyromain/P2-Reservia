@@ -432,7 +432,7 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .fa-chart-line
 {
-    padding-left: 100px;
+    padding-left: 28%;
     font-size: larger;
 }
 
@@ -535,7 +535,6 @@ aside img
 
 aside h2
 {
-    padding-left: 5px;
     padding-top: 15px;
     margin-bottom: 20px;
 }
@@ -702,6 +701,7 @@ footer
     background-color: #F2F2F2;
     max-width: 100%;
     flex-direction: column;
+    padding-left:20px;
 }
 
 footer h3
