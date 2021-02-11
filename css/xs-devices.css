@@ -66,11 +66,12 @@
 body
 {
     font-family: 'ralewayregular', Arial, sans-serif;
+	margin: 0;
 }
 
 #bloc_page
 {
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -109,6 +110,7 @@ header
   {
     width: 100px;
     height: 50px;
+    margin-left:9%;
   }
 
 nav ul
@@ -152,8 +154,8 @@ nav li:nth-child(-n+2)
     border-bottom: 2px solid #F2F2F2;
     padding-bottom: 10px;
     margin: 0;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 14%;
+    padding-right: 15%;
 }
 
 nav > ul > li:nth-child(3) > a
@@ -169,14 +171,14 @@ nav > ul > li:nth-child(3) > a
 
 #intro h1
 {
-    padding-left: 15px;
-    padding-right: 45px;
+    padding-left: 9%;
+    padding-right: 12%;
 }
 
 #intro p
 {
     font-size: 0.9em;
-    padding-left: 15px;
+    padding-left: 9%;
     margin-bottom: 35px;
 }
 
@@ -189,6 +191,7 @@ nav > ul > li:nth-child(3) > a
     display: flex;
     flex-wrap: nowrap;
     margin-top:25px;
+    margin-left:6%;
      
 }
 
@@ -233,7 +236,7 @@ nav > ul > li:nth-child(3) > a
     justify-content: space-between;
     align-items: baseline;
     margin-top: 15px;
-    margin-left: 5px;
+    margin-left: 8%;
     cursor: pointer;
 }
 
@@ -252,7 +255,7 @@ nav > ul > li:nth-child(3) > a
 #filtres > h2
 {
     font-size:1em;
-    padding-left: 8px;
+    padding-left: 1%;
     margin-bottom: 8px;
 }
 
@@ -326,6 +329,7 @@ nav > ul > li:nth-child(3) > a
     padding-bottom: 5px;
     border-radius: 25px 25px 25px 25px;
     font-size: smaller;
+    margin-left:9%;
 }
 
 #econo-familial
@@ -350,13 +354,13 @@ section
     margin-bottom: 14px;
     background-color: none;
     border-radius: 25px 25px 25px 25px;
-    max-width: 500px;
+    width: 90%;
     
 }
 
 .hebergements h2
 {
-    padding-left: 15px;
+    padding-left: 10%;
     margin-bottom: 10px;
     margin-top: 30px;
 }
@@ -402,7 +406,7 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .ligne1 img
 {
-    width: 19.8em;
+    width: 101.5%;
     height: 8em;
     object-fit: cover;
 }
@@ -417,7 +421,7 @@ aside .hebergements, .blue-stars, .grey-stars
 
 .ligne2 img
 {
-    width: 19.8em;
+    width: 101.5%;
     height: 8em;
     object-fit: cover;
 }
@@ -426,6 +430,7 @@ aside .hebergements, .blue-stars, .grey-stars
 {
     font-size: 1em;
     font-weight: bold;
+    padding-left: 6%;
 }
 
 
@@ -466,7 +471,8 @@ aside .hebergements, .blue-stars, .grey-stars
     padding-bottom: 10px;
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px #F2F2F2);
-    width: 19.5em;
+    width: 90%;
+    margin-left: 9%;
        
 } 
 .hebergements a
@@ -492,6 +498,7 @@ aside
     background-color: #F2F2F2;
     margin-top: 35px;
     padding: 16px;
+	width: 100%;
 }
 
 aside h2, p
@@ -515,6 +522,7 @@ margin-top: 0;
     height: 145px;  
     text-decoration: none;
     filter: drop-shadow(4px 4px 4px #bdbdbd);
+    margin-left: 4%;
 } 
 
 
@@ -537,6 +545,7 @@ aside h2
 {
     padding-top: 15px;
     margin-bottom: 20px;
+    margin-left: 4%;
 }
 
 aside h3
@@ -587,17 +596,23 @@ aside p
     display:flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-left: 6%;
 }
 
-#activites h3
+#activites-t
 {
-    padding-left: 20px;
+    width:90%;
+}
+
+#activites-t h3
+{
+    padding-left: 7%;
 }
 
 #activites-t > h2
 {
 margin-bottom: 0;
-margin-left: 15px;
+margin-left: 9%;
 }
 
 #activites img
@@ -609,7 +624,7 @@ margin-left: 15px;
 .colonne1 img
 {
    object-fit:cover;
-   width:20em;
+   width:100%;
    height:10em;
 }
 
@@ -617,7 +632,7 @@ margin-left: 15px;
 {
     object-fit:cover;
     object-position: center;
-   width:20em;
+   width:100%;
    height:10em;
 }
 
@@ -625,14 +640,14 @@ margin-left: 15px;
 {
     object-fit:cover;
     object-position: top;
-    width:20em;
+    width:100%;
    height:10em;
 }
 
 .colonne3 img
 {
     object-fit:cover;
-   width:20em;
+   width:100%;
    height:10em;
 }
 
@@ -640,15 +655,15 @@ margin-left: 15px;
 {
     object-fit:cover;
     object-position: center;
-   width:20em;
-   height:10em;
+    width:100%;
+    height:10em;
 }
 
 .longchamp img
 {
     object-fit:cover;
     object-position: center;
-   width:20em;
+   width:100%;
    height:10em;
 }
 
@@ -658,12 +673,12 @@ margin-left: 15px;
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     margin: 20px;
-    margin-left:14px;
     padding-bottom: 1px;
     box-shadow: 0 0 4px 4px  #F2F2F2;
     text-decoration: none;
-    width: 20em;
-    height: fit-content;  
+    width: 98%;
+    height: fit-content;
+    margin-left: 4%;  
 }
 
 .colonne2 .pomegues
@@ -674,12 +689,6 @@ margin-left: 15px;
 .colonne4 .notredame
 {
     margin-bottom: 35px;
-}
-
-#activites h2
-{
-    padding-left:20px;
-    font-size: 0.9em;
 }
 
 #activites a
@@ -697,7 +706,6 @@ footer
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 25px;
     background-color: #F2F2F2;
     max-width: 100%;
     flex-direction: column;
@@ -706,7 +714,7 @@ footer
 
 footer h3
 {
-    padding-left: 6px;
+    padding-left: 4%;
     margin-bottom: -10px;
 }
 
@@ -723,7 +731,7 @@ footer a
     color: black;
     padding-bottom: 3px;
     text-decoration: none;
-    margin-left: 7px;
+    margin-left: 4%;
 }
 
 footer a:hover

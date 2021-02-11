@@ -70,7 +70,7 @@ body
 
 #bloc_page
 {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -335,7 +335,7 @@ section
     margin-bottom: 14px;
     background-color: none;
     border-radius: 25px 25px 25px 25px;
-    max-width: 80%;
+    max-width: 79%;
     margin-top: 20px;
 }
 
