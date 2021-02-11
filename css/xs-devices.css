@@ -612,7 +612,7 @@ aside p
 #activites-t > h2
 {
 margin-bottom: 0;
-margin-left: 9%;
+margin-left: 10%;
 }
 
 #activites img
@@ -705,7 +705,6 @@ footer
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 20px;
     background-color: #F2F2F2;
     max-width: 100%;
     flex-direction: column;
