@@ -14,4 +14,4 @@ Compétences évaluées :
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive
 
-Lien vers le site web : https://dyromain.github.io/RomainDyrac_2_03122020/main.html
+Lien vers le site web : https://dyromain.github.io/Reservia-P2-Transformer-une-maquette-en-site-web/main.html
