@@ -14,7 +14,7 @@ Compétences évaluées :
 - Intégrer du contenu conformément à une maquette
 - Implémenter une interface responsive
 
-Lien vers le site web : https://dyromain.github.io/Reservia-P2-Transformer-une-maquette-en-site-web/main.html
+Lien vers le site web : https://dyromain.github.io/P2-Reservia/main.html
 
 **********************************************************
 
@@ -26,4 +26,4 @@ Skills acquired in this project :
 - Integrate web content according to a mockup using HTML & CSS
 - Implement a responsive layout
 
-Link to website: https://dyromain.github.io/Reservia-P2-Transformer-une-maquette-en-site-web/main.html
+Link to website: https://dyromain.github.io/P2-Reservia/main.html
